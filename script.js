@@ -34,7 +34,8 @@ switchButton.onclick = function () {
             borderBottomRightRadius: "20px",
             borderTopLeftRadius: "0px",
             borderBottomLeftRadius: "0px",
-            duration:0.5
+            duration:0.5,
+            ease:"back"
         })  
     }
     else{
@@ -51,7 +52,9 @@ switchButton.onclick = function () {
             borderBottomRightRadius: "0px",
             borderTopLeftRadius: "20px",
             borderBottomLeftRadius: "20px",
-            duration:0.4
+            duration:0.5,
+            ease:"back"
+            
         })  
     }
 }; 

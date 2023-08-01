@@ -88,7 +88,19 @@ moonIcon.onclick = function () {
 
     gsap.to(".nav-dark",{
         width:"100vw",
-        delay:0.2
+        delay:0.2,
+        ease:"power2"
+
+    })
+
+    gsap.to(".fa-sun",{
+        rotate:360,
+        // stagger:0.2
+    })
+
+    gsap.to(".fa-moon",{
+        rotate:0,
+        // stagger:0.2
     })
 
 }
@@ -119,8 +131,17 @@ sunIcon.onclick = function () {
 
     gsap.to(".nav-dark",{
         width:0,
-        delay:0.2
+        delay:0.2,
+    })
 
+    gsap.to(".fa-moon",{
+        rotate:360,
+        // stagger:0.2
+    });
+
+    gsap.to(".fa-sun",{
+        rotate:0,
+        // stagger:0.2
     })
 
 }

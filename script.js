@@ -14,7 +14,7 @@ tl.from(".nav-bar",{
 
 tl.from(".nav-bar>h1 , .nav-last-div",{
     y:"-120%",
-    duration:0.3,
+    duration:0.5,
     ease:"bounce"
 })
 

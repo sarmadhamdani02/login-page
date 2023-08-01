@@ -25,7 +25,9 @@ switchButton.onclick = function () {
     
         gsap.to(".fa-arrow-right",{
              rotate:0,
-             duration:0.4
+             duration:0.4,
+            ease:"back"
+            
         })  
 
         gsap.to(".blur-cont",{
@@ -43,7 +45,9 @@ switchButton.onclick = function () {
         
         gsap.to(".fa-arrow-right",{
             rotate:-180,
-            duration:0.4
+            duration:0.4,
+            ease:"back"
+
         })   
         
         gsap.to(".blur-cont",{

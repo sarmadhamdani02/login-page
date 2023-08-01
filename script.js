@@ -55,3 +55,72 @@ switchButton.onclick = function () {
         })  
     }
 }; 
+
+// night mode
+
+var sunIcon = document.querySelector(".fa-sun");
+var moonIcon = document.querySelector(".fa-moon");
+var main = document.querySelector(".main");
+
+moonIcon.onclick = function () {
+    sunIcon.style.display = "inline-block";
+    moonIcon.style.display = "none";
+    gsap.to(".main-dark",{
+        width:"100vw",
+    });
+
+    gsap.to(".container",{
+        backgroundColor:"#111",
+        color:"white",
+        border:"1px solid white"
+
+    });
+
+    gsap.to(".container .form>input",{
+        borderColor:"white",
+        color:"white"
+
+    });
+
+    gsap.to(".nav-bar h3, .nav-bar i",{
+        color:"white"
+    })
+
+    gsap.to(".nav-dark",{
+        width:"100vw",
+        delay:0.2
+    })
+
+}
+
+sunIcon.onclick = function () {
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "inline-block";
+    gsap.to(".main-dark",{
+        width:"0",
+
+    });
+
+    gsap.to(".container",{
+        backgroundColor:"white",
+        color:"#333",
+        border:"none",
+    });
+
+    gsap.to(".container .form input",{
+        borderColor:"#333",
+        color:"#333",
+
+    });
+
+    gsap.to(".nav-bar h3, .nav-bar i",{
+        color:"#333"
+    });
+
+    gsap.to(".nav-dark",{
+        width:0,
+        delay:0.2
+
+    })
+
+}

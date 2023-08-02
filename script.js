@@ -30,6 +30,7 @@ tl.from(".nav-bar>h1 , .nav-last-div",{
 
 
 switchButton.onclick = function () { 
+
     if (innerText.innerHTML != "Sign Up Instead ") {
         innerText.innerHTML = "Sign Up Instead ";
     
@@ -80,6 +81,17 @@ var moonIcon = document.querySelector(".fa-moon");
 var main = document.querySelector(".main");
 
 moonIcon.onclick = function () {
+
+    gsap.to(".cursor",{
+        backgroundColor:"yellowgreen",
+        duration:0.2,
+    })
+
+    gsap.to(".cursor-blur",{
+        backgroundColor:"rgba(153, 205, 50, 0.3)",
+        duration:0.2,
+    })
+
     sunIcon.style.display = "inline-block";
     moonIcon.style.display = "none";
     gsap.to(".main-dark",{
@@ -123,6 +135,18 @@ moonIcon.onclick = function () {
 }
 
 sunIcon.onclick = function () {
+
+    
+    gsap.to(".cursor",{
+        backgroundColor:"crimson",
+        duration:0.2,
+    })
+
+    gsap.to(".cursor-blur",{
+        backgroundColor:"rgba(220, 20, 60, 0.494)",
+        duration:0.2,
+    })
+
     sunIcon.style.display = "none";
     moonIcon.style.display = "inline-block";
     gsap.to(".main-dark",{

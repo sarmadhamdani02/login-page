@@ -7,6 +7,26 @@ body {
   font-family: sans-serif;
 }
 
+.cursor{
+  background-color: crimson;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  border-radius: 50%;
+}
+
+.cursor-blur{
+  background-color: rgba(220, 20, 60, 0.309);
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: 99;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;

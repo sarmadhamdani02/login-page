@@ -2,6 +2,16 @@
 var switchButton = document.getElementsByClassName("switch-btn")[0];
 var innerText = document.querySelector(".inner-text");
 var arrow = document.getElementsByClassName("fa-arrow-right")[0];
+var cursor = document.querySelector(".cursor");
+var cursorBlur = document.querySelector(".cursor-blur");
+
+// adding cursor
+document.addEventListener("mousemove", (dets) => {
+    cursor.style.left = (dets.x) + "px";
+    cursor.style.top = (dets.y) + "px";
+    cursorBlur.style.left = (dets.x - 120) + "px";
+    cursorBlur.style.top = (dets.y - 120) + "px";
+})
 
 // navbar animation
 var tl = gsap.timeline();
